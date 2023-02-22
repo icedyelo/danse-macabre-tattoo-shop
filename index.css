@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Revolver;
+    src: url(RevolverBlackletter-Regular.otf);
+}
+
+@font-face{
+
+    font-family: Didot;
+    src: url(Didot\ Regular.ttf);
+    }
+
+    @font-face{
+
+        font-family: Didot-Italic;
+        src: url(Didot\ LT\ Std\ Italic.otf);
+        }
+
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #212121;
+}
+
+
+#container{
+    background: url('bg.jpg') no-repeat center/cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+display: flex;
+justify-content:  space-around;
+align-items:center ;
+background-color: #212121;
+font-family: "Revolver", sans-serif;
+width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: #E43F3F;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 48px;
+}
+.logo {
+    cursor: pointer;
+    height: 20%;
+    width: 60%;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li, a{
+    transition:  all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: white;
+}
+
+.container-2 {
+    background: url('bg.jpg') no-repeat center/cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.about{
+    margin-left: 33%;
+    padding-top: 50px;
+}
+
+.about h1 {
+    color: #E43F3F;
+    font-family: "Revolver", sans-serif;
+    font-size: 150px;
+    text-transform: lowercase;
+    font-weight: 100;
+    margin-left: 50px ;
+
+}
+
+.about p{
+    color: #fff;
+    font-family: "Didot-Italic", serif;
+    line-height: 200%;
+    font-size: 18px;
+    word-spacing: 5px;
+    font-weight:lighter;
+    margin-left: 50px;
+}
+
+button{
+background-color: #E43F3F;
+border: none;
+margin-top: 30px;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Didot-Italic", serif;
+  text-transform: lowercase ;
+  font-weight: lighter;
+
+}
+
+.learn-more{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+.container-3{
+    display: flex;
+}
+
+.background-1{
+    background: url('services.jpg') no-repeat center/cover;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100vh;
+    opacity: 20%;
+    position: absolute;
+    z-index: -1;
+}
+
+.background-2{
+    background: url('artists.jpg') no-repeat center/cover;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100vh;
+    opacity: 20%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container-4{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+.container-5{
+ 
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+.container-3 h1{
+    color: #E43F3F;
+    font-size: 500px;
+    font-family: "Revolver", sans-serif;
+    font-weight: 100;
+    margin-left: 18% ;
+}
+.container-3 p{
+    color: #fff;
+    font-size: 36px;
+    font-family: "Didot-Italic",serif;
+    font-weight: 100;
+    margin-left: 15% ;
+    text-align: center;
+}
+
+.services, .artists{
+    margin-left: 45% ;
+    cursor: pointer;
+}
+
+ .line{
+
+    border-left: 6px solid rgb(255, 255, 255);
+    height: 920px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 100;
+}
+
+.footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10;
+    padding: 0.4rem;
+    background-color: #212121;
+    text-align: center;
+    color: #fff;
+    font-family: "Didot-Italic", serif;
+    font-weight: lighter;
+
+}
+
+#text{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+path {
+    stroke: #E43F3F;
+    fill: #E43F3F;
+    stroke-dasharray: 1000;
+    opacity: 10;
+    animation: animate 4s cubic-bezier(0,0.23,1,.1);
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1000;
+    }
+    30%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 500;
+    }
+    90%{
+        fill: rgba(255,255,255,0);
+    }
+    100%{
+        opacity: 10;
+        fill: #E43F3F;
+        stroke-dashoffset: 1000;
+    }
+}
+
+.logomark{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+}

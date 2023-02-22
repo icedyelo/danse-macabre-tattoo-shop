@@ -1,0 +1,100 @@
+   <style>
+    @font-face {
+    font-family: Revolver;
+    src: url(RevolverBlackletter-Regular.otf);
+}
+
+@font-face{
+
+    font-family: Didot;
+    src: url(Didot\ Regular.ttf);
+    }
+
+    @font-face{
+
+        font-family: Didot-Italic;
+        src: url(Didot\ LT\ Std\ Italic.otf);
+        }
+
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #212121;
+}
+
+
+#container{
+    background: url('bg.jpg') no-repeat center/cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+
+}
+
+nav{
+display: flex;
+justify-content:  space-around;
+align-items:center ;
+background-color: #212121;
+font-family: "Revolver", sans-serif;
+width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: #E43F3F;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 48px;
+}
+.logomark {
+    cursor: pointer;
+    height: 20%;
+    width: 60%;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li, a{
+    transition:  all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: white;
+}
+
+    </style>
+     
+     <div id="container">
+            <header>
+                <nav>
+                    <a href="home.html"><img src="logomark.png" alt="logo" class="logomark"></a>
+                    <ul class="nav-links">
+                        <li><a href="home.html"> home </a></li>
+                        <li><a href="about.html"> about us </a></li>
+                        <li><a href="services.html"> services </a></li>
+                        <li><a href="artist.html"> artists </a></li>
+                        <li><a href="contact.html"> contact us </a></li>
+                    </ul>
+                </nav>
+            </header>
+     </div>
